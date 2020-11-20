@@ -59,13 +59,11 @@ public class WebServer extends Thread
 
         if ("/".equals(path))
         {
-            path = "/index/index.html";
-            return Paths.get(webserver_root_directory,path);
+            return Paths.get(webserver_root_directory,"/index/index.html");
         }
         else if("/index.css".equals(path))
         {
-            path = "/index/index.css";
-            return Paths.get(webserver_root_directory,path);
+            return Paths.get(webserver_root_directory,"/index/index.css");
         }
         else if("/favicon.ico".equals(path))
         {
@@ -116,13 +114,15 @@ public class WebServer extends Thread
                             sendResponse(out, "200 OK", contentType, Files.readAllBytes(filePath));
                         else
                             sendResponse(out, "404 Not Found", contentType, Files.readAllBytes(Paths.get(webserver_root_directory, "/notfound/notfound.html")));
-                    } else if (webserver_status.equals("Maintenance"))
+                    }
+                    else if (webserver_status.equals("Maintenance"))
                     {
                         if (contentType.contains("html"))
                             sendResponse(out, "503 Service Unavailable", contentType, Files.readAllBytes(Paths.get(webserver_maintenance_directory, "/maintenance.html")));
                         else
                             sendResponse(out, "200 OK", contentType, Files.readAllBytes(filePath));
-                    } else
+                    }
+                    else
                         {
                         if (contentType.contains("html"))
                             sendResponse(out, "503 Service Unavailable", contentType, Files.readAllBytes(Paths.get(webserver_root_directory, "/serverdown/serverdown.html")));
@@ -166,10 +166,12 @@ public class WebServer extends Thread
     }
 }
 
+
 class Mainul
 {
     public static void main(String[] args)
     {
+
 
         WebServer webserver = new WebServer(8080,"/Users/noric/Desktop/Pages","/Users/noric/Desktop/Pages/maintenance", "Stopped");
         webserver.update_webserver_status("Running");
