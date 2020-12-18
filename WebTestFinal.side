@@ -1,0 +1,2063 @@
+{
+  "id": "15251403-6c2a-440d-b725-b7106bbbf1f5",
+  "version": "2.0",
+  "name": "WebTest",
+  "url": "http://localhost:8080/",
+  "tests": [{
+    "id": "94826360-f7d7-489f-bef8-474353309652",
+    "name": "Normal flow",
+    "commands": [{
+      "id": "c14a0101-1489-41c6-a29b-deb7e28af84a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08215099-c7c7-403d-9f7a-c150aa57d2a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "778x869",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e599ae5-f9c0-440f-90ed-fccef581435f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fb9fe11-8cc4-4511-a113-ce081b854bdb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, the server is currently down!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, the server is currently down!"
+    }, {
+      "id": "3ede41b2-33f5-442a-8aeb-c3f0c32b8ffa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Try something else...')]", "xpath:innerText"]
+      ],
+      "value": "Try something else..."
+    }, {
+      "id": "f3b544bf-9f30-469a-9ae5-3fc4c3627d24",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "142e1807-f731-40b6-aa21-0d030b07f2e0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be485631-a3d6-41ea-9570-b462b9229ae7",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff83a8ef-c114-42e2-889e-2982e02caba0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "7c43bd59-b6dc-46c2-b19f-a79c39fd7f2a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "4fb29a57-b328-4ea6-8739-c43b9416f352",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }, {
+      "id": "708a817a-a355-44f5-ad03-dd638806fd0e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c36148cf-4cd3-4163-9073-c16ad87adf62",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29fb1bbb-edc8-4154-afa8-d4640d9caf64",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'This is the content of page one!')]", "xpath:innerText"]
+      ],
+      "value": "This is the content of page one!"
+    }, {
+      "id": "bec1b740-d109-4866-a7d1-ec4f5be88808",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Moon river, wider than a mile\\nI'm crossing you in style some day\\nOh, dream maker, you heart breaker\\nWherever you're goin', I'm goin' your way"
+    }, {
+      "id": "ebcfae50-c3ff-45c2-81ae-68d33dfa2fe4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": "Two drifters, off to see the world\\nThere's such a lot of world to see\\nWe're after the same rainbow's end, waitin' 'round the bend\\nMy huckleberry friend, moon river, and me"
+    }, {
+      "id": "5c8c7455-06c8-4a98-9c39-266b2364cb16",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": "Back"
+    }, {
+      "id": "8f35cd33-97f3-4257-a647-edce71d16fb1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42f1e6ac-66b1-4dee-ab5a-a12bfcf131fb",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53dee563-a26a-442b-adb2-1a9d5373c06d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "7191e59d-cd82-4ce8-ba00-a0926f1c51c0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "5522beb5-feab-4b1e-8da9-806d0b4c4d6b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }, {
+      "id": "a30e951c-4c7f-4dec-a3ee-f7f315db9d22",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68616f8c-941e-43c4-b03a-80b78c6918cf",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abb7bc69-a196-4efe-bdaa-6d7b2a141946",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'This is the content of page two!')]", "xpath:innerText"]
+      ],
+      "value": "This is the content of page two!"
+    }, {
+      "id": "08dc0bac-2864-47d5-a60e-a67d561f9d3d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page three by clicking here",
+      "targets": [
+        ["linkText=Enter page three by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page three by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p3/p3.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page three by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page three by clicking here"
+    }, {
+      "id": "6c23b87a-79b0-4afc-b2ad-0d9fc6332798",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page four by clicking here",
+      "targets": [
+        ["linkText=Enter page four by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page four by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p4/p4.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page four by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page four by clicking here"
+    }, {
+      "id": "f68fae7a-d6c3-4fb4-8ff2-67e8c4824eb7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=p:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": "Back"
+    }, {
+      "id": "232de53c-5841-4013-a25b-dd428732deff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enter page three by clicking here",
+      "targets": [
+        ["linkText=Enter page three by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page three by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p3/p3.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page three by clicking here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e31d629-3abd-44d1-8420-6d9d6c67cb91",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9c58a8b-1cd4-4c1c-bac7-2bb95e6ae810",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'This is the content of page three!')]", "xpath:innerText"]
+      ],
+      "value": "This is the content of page three!"
+    }, {
+      "id": "38517886-1ac0-4f06-b050-8838c693eaa1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Moon river, wider than a mile\\nI'm crossing you in style some day\\nOh, dream maker, you heart breaker\\nWherever you're goin', I'm goin' your way"
+    }, {
+      "id": "c2ba7580-ebb4-4323-9007-377f86960a61",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": "Two drifters, off to see the world\\nThere's such a lot of world to see\\nWe're after the same rainbow's end, waitin' 'round the bend\\nMy huckleberry friend, moon river, and me"
+    }, {
+      "id": "01e739d8-a484-4b3f-a0a5-1633ddc3e0e4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": "Back"
+    }, {
+      "id": "e693c201-65cb-494a-a4b3-02712b72730a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3947e91-6b30-41d8-b490-37b48b9684e8",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b88855b5-101f-4ace-a004-3674a6f3dbe1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'This is the content of page two!')]", "xpath:innerText"]
+      ],
+      "value": "This is the content of page two!"
+    }, {
+      "id": "376787f4-cee6-4ac9-9a1d-2b0a5349a462",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page three by clicking here",
+      "targets": [
+        ["linkText=Enter page three by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page three by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p3/p3.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page three by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page three by clicking here"
+    }, {
+      "id": "63fbc9ea-335d-4917-8f99-2b8e8b3f6ba8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page four by clicking here",
+      "targets": [
+        ["linkText=Enter page four by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page four by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p4/p4.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page four by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page four by clicking here"
+    }, {
+      "id": "6c8d3ff2-e58c-4d6a-b699-358886730d4b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=p:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": "Back"
+    }, {
+      "id": "7d2bb857-acc9-4dd5-983c-263bd79da8fd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enter page four by clicking here",
+      "targets": [
+        ["linkText=Enter page four by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page four by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p4/p4.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page four by clicking here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4978586d-337e-4542-9fc3-dcbebc5a8b75",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c33061a5-a97b-48ec-9670-073272158c58",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'This is the content of page four!')]", "xpath:innerText"]
+      ],
+      "value": "This is the content of page four!"
+    }, {
+      "id": "1661f68c-fd97-40da-8a7f-f020f9a84622",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Moon river, wider than a mile\\nI'm crossing you in style some day\\nOh, dream maker, you heart breaker\\nWherever you're goin', I'm goin' your way"
+    }, {
+      "id": "c362c24f-8587-4580-8d05-2ccd1dcd9a99",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": "Two drifters, off to see the world\\nThere's such a lot of world to see\\nWe're after the same rainbow's end, waitin' 'round the bend\\nMy huckleberry friend, moon river, and me"
+    }, {
+      "id": "73291ee9-ee33-4f68-9ec8-982568112fa1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": "Back"
+    }, {
+      "id": "4a22fcb5-dd7b-4acb-b76d-9b52673db0d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6257ac5-36ae-4920-a5cb-e4d5de980df5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92a970d6-f99e-4ce6-9517-051571f47bf0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'This is the content of page two!')]", "xpath:innerText"]
+      ],
+      "value": "This is the content of page two!"
+    }, {
+      "id": "df18f686-383c-49f8-9f7b-d74c504b3853",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page three by clicking here",
+      "targets": [
+        ["linkText=Enter page three by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page three by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p3/p3.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page three by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page three by clicking here"
+    }, {
+      "id": "cd24ebc4-8092-4f66-8619-d74bc709863c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page four by clicking here",
+      "targets": [
+        ["linkText=Enter page four by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page four by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p4/p4.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page four by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page four by clicking here"
+    }, {
+      "id": "d0e0b225-f743-4fe7-b92a-4baf63429c57",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=p:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": "Back"
+    }, {
+      "id": "9fb5ef91-e52c-47bb-9656-662eeb38d82b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=p:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e307aaa4-abad-4141-bbec-ad2c5ca1754d",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66499aee-5862-431f-9dd1-fbd2e74724e8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "a75c361f-b46b-48cf-9621-4936b6be130f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "3d3efe40-4617-4d86-8ec3-5b24be210158",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }]
+  }, {
+    "id": "8950119a-3d38-4633-94eb-eca76f0decc8",
+    "name": "Sudden stop + ReRun",
+    "commands": [{
+      "id": "a30e4b95-07f0-48ba-9b33-8d6e7b5b536c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6533585-fbc9-4da0-a384-fa31dcd39e3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "778x869",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b3ee4e0-bfb7-452f-b1b7-fb31f86132e4",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c2881e5-7d77-4f23-abac-e32277f0b94d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, the server is currently down!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, the server is currently down!"
+    }, {
+      "id": "0a84743d-3e3b-402b-8ce1-12f5f2c156f7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Try something else...')]", "xpath:innerText"]
+      ],
+      "value": "Try something else..."
+    }, {
+      "id": "f0a8935a-3bae-4e2b-98a6-cc3526d6f922",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "95939c8a-afd3-472e-8661-c9d5b987c821",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "704547db-1309-4aa4-9efd-ae0a6a467db5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44c4351a-4d9f-48d5-ac32-ef92d127b86b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "439f404f-c7c6-4e51-8b57-61e11746f7cc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "1dccfdde-308d-4e37-b090-943b97880cd2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }, {
+      "id": "de2dfefa-26fa-4726-9935-22b360211413",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a1cefb9-fd70-4f6a-ae2f-4c98216e201e",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c93e559-6c6f-44cd-aa02-4000bdab71cf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, the server is currently down!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, the server is currently down!"
+    }, {
+      "id": "69fc35d0-e645-4ba6-8d3e-f489e7320d3c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Try something else...')]", "xpath:innerText"]
+      ],
+      "value": "Try something else..."
+    }, {
+      "id": "3df24553-5df9-4a50-8978-c90c34e9db92",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "bd9b39f3-d04d-4de6-a0aa-c418b5f86d6d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e48ffd3-a5dd-4b57-82be-91eab0ff4c85",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05e455c9-a29b-44f2-8aad-66184d3bedc8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "453e7823-f06e-4435-8c47-7403271929ce",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "c4700df7-9f98-4741-8a19-d3411c1384f1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }]
+  }, {
+    "id": "ff75348a-51f6-4a5c-9e9d-fd806c098495",
+    "name": "Sudden Maintenance + ReRun",
+    "commands": [{
+      "id": "024379c8-c787-4daa-aa8e-19142b433daa",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "300805e3-c625-4f97-9bc9-eae1e40b5a7b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "778x869",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5845a5ba-866d-4fc0-bcc1-8959488b5d2e",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71063376-8152-4c1b-bd77-f1f08a483709",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, the server is currently down!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, the server is currently down!"
+    }, {
+      "id": "641296d9-278e-48b3-88d3-d62ef2dc5590",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Try something else...')]", "xpath:innerText"]
+      ],
+      "value": "Try something else..."
+    }, {
+      "id": "e99e81a6-f29c-4f46-9e34-f7801c7e7d0d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "188b2c9c-c8b7-4ce5-bf01-4a95bed53647",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "471b79dd-bf7f-4f54-8bf1-756278d02a80",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a52c21ca-62ff-4dc4-bea4-30fc7e8b52a3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "37a28f4c-cb88-4709-996f-f790682395d3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "08a8a27f-b93d-404c-b62c-041e91112ae2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }, {
+      "id": "08158f8d-7eca-4b1a-b6be-15de3970c5f2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93c43bbd-ad31-495b-8d41-466ad3bb10d2",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62165936-765b-4775-ae79-a690eecb2047",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry we are currently doing some maintenance!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry we are currently doing some maintenance!"
+    }, {
+      "id": "b87fe087-ffcf-4cac-b590-8855c5a5b137",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'In the meantime, read this poem.')]", "xpath:innerText"]
+      ],
+      "value": "In the meantime, read this poem."
+    }, {
+      "id": "1b8e8f6f-653e-4725-adc0-e5ce169a7714",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Moon river, wider than a mile\\nI'm crossing you in style some day\\nOh, dream maker, you heart breaker\\nWherever you're goin', I'm goin' your way"
+    }, {
+      "id": "a90cea55-9123-4a6f-949d-923067b94e72",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(5)",
+      "targets": [
+        ["css=p:nth-child(5)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": "Two drifters, off to see the world\\nThere's such a lot of world to see\\nWe're after the same rainbow's end, waitin' 'round the bend\\nMy huckleberry friend, moon river, and me"
+    }, {
+      "id": "44f78dac-5756-4e98-9c1b-3ff8a8884aa0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "a7a6e430-b8ed-498a-b708-d2345374a373",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db1d54a9-294d-4269-a2c0-bc5f25eadbe5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f541b61-7627-4424-afa6-53a99c5ad574",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "c4886766-36bd-4af3-abb4-5a239077b32c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "f3acc902-5be1-45be-9eb0-d2c28076ef3a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }]
+  }, {
+    "id": "866485e3-fab9-42f0-8dca-f0ece7827d4c",
+    "name": "Seach for inexistentent page",
+    "commands": [{
+      "id": "b65e9e9c-1fab-45e8-8d9a-5d05f2bfdf4f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3704c84b-67f1-4ed4-9612-50dedd6e5674",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "778x869",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bd13a10-8120-4e9b-8862-c45e299fe57a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "076d7bab-5be3-4ad6-9d12-c8e054af01e6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, the server is currently down!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, the server is currently down!"
+    }, {
+      "id": "d1bfaaa3-fe12-4993-813f-f7e57ec05058",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Try something else...')]", "xpath:innerText"]
+      ],
+      "value": "Try something else..."
+    }, {
+      "id": "e9990a6a-fd22-42bd-8b7a-4dd06b491cfc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "54e80a82-ab5f-47e0-8e46-44bc12a3ba2e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "073aa90a-c2ad-4a7b-b418-387b0ad8bc35",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a1881cb-b33e-4b74-b380-0f687036c0c0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "fc995c42-0773-42a7-885c-4bc3b058dff2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "14c6ef27-1a54-4fcd-be9c-58d4bb8a1f0a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }, {
+      "id": "3b828849-df35-4207-865b-e616b58d8b19",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cab71b93-ac1c-4774-890c-4f3711859eae",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, we do not have that!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, we do not have that!"
+    }, {
+      "id": "4ef48908-aad1-4dd7-bf4b-ceac9f45fc59",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Try something else...')]", "xpath:innerText"]
+      ],
+      "value": "Try something else..."
+    }, {
+      "id": "4b6759bd-4e87-42d9-abf5-c8cb586aeee6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Go Back",
+      "targets": [
+        ["linkText=Go Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'javascript:history.back()')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go Back')]", "xpath:innerText"]
+      ],
+      "value": "Go Back"
+    }, {
+      "id": "643e34aa-ef80-4e24-b8c0-05d914ecf2e1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go Back",
+      "targets": [
+        ["linkText=Go Back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go Back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'javascript:history.back()')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b445da4-b8a0-4411-b70e-06031a8280bb",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f613ad0b-8171-41b8-8870-a8fa952a0ff1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "02716bc3-c31d-46ed-94a9-c55b39907d2b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "76a45e7a-b5e0-4413-85a9-4217554d1ab6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }]
+  }, {
+    "id": "efdd1218-0465-4683-809f-58722a07ae62",
+    "name": "Change port",
+    "commands": [{
+      "id": "c241a897-87b1-4f34-a8b4-35812f742cbf",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef857fe5-2096-4406-9d5c-c7dd5c17a77f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "778x869",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46402517-53d3-413e-839f-a4299f1a055f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abd92103-6a57-410b-b0b7-bc17130794ba",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, the server is currently down!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, the server is currently down!"
+    }, {
+      "id": "95916041-25e3-43c0-bf0b-842e1b319f6e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Try something else...')]", "xpath:innerText"]
+      ],
+      "value": "Try something else..."
+    }, {
+      "id": "d0959765-ed65-438b-aa18-7dcb711044a1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "61758f68-8cff-4c48-9659-8f01b1373e9c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "633588b0-b563-421f-9ba2-d5c3beebcb30",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ea3756d-8481-40d5-b6c8-2df0e83beff9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "358f302c-6b7c-44ed-9c32-66d68b358ed6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "cae4e651-04d2-452e-860d-e52a6aa60f95",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }, {
+      "id": "c1cacdd8-ad58-4a9f-b275-76c2bd33c41c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "266fe075-14ce-452f-bde6-8a9fa5034cb8",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53266aca-9600-4163-9cf0-5821ece41e3f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, the server is currently down!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, the server is currently down!"
+    }, {
+      "id": "75479476-6879-4b5d-af11-22353df0e026",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Try something else...')]", "xpath:innerText"]
+      ],
+      "value": "Try something else..."
+    }, {
+      "id": "421a6422-1d5b-4b2c-bb07-278dbe6085be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ff6ed8e-bdbb-4394-aa6d-018f28045855",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2988b22-1a01-4ee3-80cf-84067665b2bb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "e8666031-c5e9-4f79-a526-753f97cb88ee",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "98dfedb3-d607-4e41-a1ae-e053df658b87",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }]
+  }, {
+    "id": "d8fe00be-fc3a-4fff-82aa-c186a66ca41b",
+    "name": "Change maintenance directory",
+    "commands": [{
+      "id": "dfcbe642-6a3a-4697-b01f-254b41f15b25",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c347186d-d1c6-4c1d-87fb-db25d71554a0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "848x546",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3440e44-1b3a-47ae-b1e3-d7e12091224d",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf07fdce-687e-4750-ac3e-6ea11f3d8a87",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, the server is currently down!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, the server is currently down!"
+    }, {
+      "id": "45f18af2-9348-4d20-9dfc-1f4b5c8b84b9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Try something else...')]", "xpath:innerText"]
+      ],
+      "value": "Try something else..."
+    }, {
+      "id": "462ba4de-0812-47d8-9899-9780c0dcab25",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(5)",
+      "targets": [
+        ["css=p:nth-child(5)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "90effaeb-223e-4553-966f-aa9566ddff8b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "136cce5e-42c8-4e4f-baf1-cdfe10132d66",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53e31fea-4b85-40f3-92f4-9205c997f1a4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "492e0474-5564-43a0-8b04-de1b89e9f7bc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "b64ddcb9-f7ea-4873-97ab-8795e3d70247",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }, {
+      "id": "5b7238bb-2c6d-4913-aea6-056ef0d9e5a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "986fe5c5-be9a-4244-8b1e-46b9913a2fb4",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cefcf443-1aec-4502-b449-71897a0f7fb0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'XSorry we are currently doing some maintenance!X')]", "xpath:innerText"]
+      ],
+      "value": "XSorry we are currently doing some maintenance!X"
+    }, {
+      "id": "6b55d28c-d41b-479c-9a75-be4e7d1a1bab",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'In the meantime, read this poem.')]", "xpath:innerText"]
+      ],
+      "value": "In the meantime, read this poem."
+    }, {
+      "id": "5bd052a5-cb96-456e-8460-5df6f470547a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Moon river, wider than a mile\\nI'm crossing you in style some day\\nOh, dream maker, you heart breaker\\nWherever you're goin', I'm goin' your way"
+    }, {
+      "id": "2e949332-1644-4c87-899b-b671ed9939b5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(5)",
+      "targets": [
+        ["css=p:nth-child(5)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": "Two drifters, off to see the world\\nThere's such a lot of world to see\\nWe're after the same rainbow's end, waitin' 'round the bend\\nMy huckleberry friend, moon river, and me"
+    }, {
+      "id": "71ce5776-be30-458e-adb4-4a4fbd027825",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "f8503940-dcc4-4b25-bd16-f58e9a3c0de7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79b412c4-1288-44f3-8d3c-72782f79e7d5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c47fa99-73c8-464e-bd85-c1b01fc2f31b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "cd3bfd50-a006-46e0-bfc3-33070a059cb6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "fe263dfb-4bee-464a-b5d4-5a6a1bd34950",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }]
+  }, {
+    "id": "720de299-e4eb-47d1-b7f1-b367cfa7e4e8",
+    "name": "Change root directory",
+    "commands": [{
+      "id": "46502e98-ea85-45a3-9060-eaee72fdcb2e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf6928ac-39c2-4aeb-ada8-b593a6a208bb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "848x556",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f657d70b-b657-4dcf-8e64-dec840400ebf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be40bafe-e646-4f75-95b9-1e893c6eb82c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "985649bc-011a-43da-85d0-3268ea97a5af",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Welcome to Norica's homepage!"
+    }, {
+      "id": "41abaf3e-3cbf-416d-8dfe-d59c80905fa3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "651811a7-07df-4a83-9077-127d08782b5e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }, {
+      "id": "69029df7-8d5e-4297-b970-5338bc671969",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb85225b-d69c-4303-af2c-b35950d24338",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1a6fbbc-65af-40e7-bc6d-eaf32da85a68",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry we are currently doing some maintenance!')]", "xpath:innerText"]
+      ],
+      "value": "Sorry we are currently doing some maintenance!"
+    }, {
+      "id": "b8c71e11-e901-4e69-b911-4be4636998f8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'In the meantime, read this poem.')]", "xpath:innerText"]
+      ],
+      "value": "In the meantime, read this poem."
+    }, {
+      "id": "d88bcaff-a709-4e0b-8f88-6a26a5fd7e49",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Moon river, wider than a mile\\nI'm crossing you in style some day\\nOh, dream maker, you heart breaker\\nWherever you're goin', I'm goin' your way"
+    }, {
+      "id": "24d67a6f-83bf-4fb7-881e-8db2f877a58b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(5)",
+      "targets": [
+        ["css=p:nth-child(5)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": "Two drifters, off to see the world\\nThere's such a lot of world to see\\nWe're after the same rainbow's end, waitin' 'round the bend\\nMy huckleberry friend, moon river, and me"
+    }, {
+      "id": "935fcbfc-35a4-4b09-ba3c-fc31ce5e1369",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Refresh",
+      "targets": [
+        ["linkText=Refresh", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refresh')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/Pages/index/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refresh')]", "xpath:innerText"]
+      ],
+      "value": "Refresh"
+    }, {
+      "id": "c5fb827e-8799-4c44-8bf6-79564bc8dc75",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Norica's homepage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c39d54af-7c71-425a-950d-a48810564336",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "XWelcome to Norica's homepage!X"
+    }, {
+      "id": "3cd1dc2c-dabc-48ee-bcb0-35aee2b89a3a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page one by clicking here",
+      "targets": [
+        ["linkText=Enter page one by clicking here", "linkText"],
+        ["css=p:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page one by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/PagesX/p1/p1.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page one by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page one by clicking here"
+    }, {
+      "id": "8e238d12-9ebf-438a-a0da-0c7fbb0d1802",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Enter page two by clicking here",
+      "targets": [
+        ["linkText=Enter page two by clicking here", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Enter page two by clicking here')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Users/noric/Desktop/PagesX/p2/p2.html')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enter page two by clicking here')]", "xpath:innerText"]
+      ],
+      "value": "Enter page two by clicking here"
+    }]
+  }],
+  "suites": [{
+    "id": "ec3b530f-a9cf-408c-975f-4f20b318e173",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
